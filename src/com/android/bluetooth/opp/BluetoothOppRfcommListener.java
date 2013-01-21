@@ -151,10 +151,6 @@ public class BluetoothOppRfcommListener {
                         BluetoothSocket clientSocket;
                         while (!mInterrupted) {
                             try {
-<<<<<<< HEAD
-                                clientSocket = mBtServerSocket.accept();
-                                Log.i(TAG, "Accepted connectoin from "
-=======
                                 if (V) Log.v(TAG, "Accepting connection...");
                                 if (mBtServerSocket == null) {
 
@@ -166,7 +162,6 @@ public class BluetoothOppRfcommListener {
                                 } else {
                                     clientSocket = sSocket.accept();
                                     if (V) Log.v(TAG, "Accepted connection from "
->>>>>>> e7f60fe... Bluetooth MAP (Message Access Profile) Upstream Changes (1/3)
                                         + clientSocket.getRemoteDevice());
                                 BluetoothOppRfcommTransport transport = new BluetoothOppRfcommTransport(
                                         clientSocket);

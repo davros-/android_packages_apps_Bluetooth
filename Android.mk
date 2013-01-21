@@ -8,12 +8,9 @@ LOCAL_SRC_FILES := $(call all-subdir-java-files)
 LOCAL_PACKAGE_NAME := Bluetooth
 
 LOCAL_JAVA_LIBRARIES := javax.obex
-<<<<<<< HEAD
-=======
 
 LOCAL_JAVA_LIBRARIES += telephony-common mms-common
 
->>>>>>> e7f60fe... Bluetooth MAP (Message Access Profile) Upstream Changes (1/3)
 LOCAL_STATIC_JAVA_LIBRARIES := com.android.vcard
 
 LOCAL_CERTIFICATE := platform
